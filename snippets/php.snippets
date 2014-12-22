@@ -224,3 +224,5 @@ snippet ift
 	<?php endif; ?>
 snippet echot
 	<?php echo $${1:variable}; ?>
+snippet fpc
+	file_put_contents('/tmp/${1:output.log}', var_export($${2:variable}, true)${3:, FILE_APPEND});
